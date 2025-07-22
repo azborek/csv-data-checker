@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/run-diff.py": {
+      "runtime": "python3.11"
+    }
+  },
+  "routes": [
+    {
+      "src": "/run-diff",
+      "dest": "api/run-diff.py"
+    }
+  ]
+}
