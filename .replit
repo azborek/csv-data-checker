@@ -1,0 +1,20 @@
+entrypoint = "main.py"
+modules = ["python-3.11"]
+
+[nix]
+channel = "stable-24_05"
+packages = ["glibcLocales"]
+
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[[interpreters]]
+pattern = "main.py"
+command = ["python3", "main.py"]
+
+[[ports]]
+localPort = 8080
+externalPort = 8080
